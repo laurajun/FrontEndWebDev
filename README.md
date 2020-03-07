@@ -16,3 +16,8 @@ I really got into this subject again and I will continue learning :)
 
 I got into jQuery features, gosh, I love it. Less rows, more performance and clarity.
 I didn't know earlier that calls can be chained.
+
+# backbone.js
+
+This is bit of old for nowadays but good ABC for me before I move to react.js. 
+With backbone.js I can test onepage applications. 
