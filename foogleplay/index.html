@@ -9,11 +9,11 @@
 	<link rel="stylesheet" href="http://meyerweb.com/eric/tools/css/reset/reset.css">
 	<link href='http://fonts.googleapis.com/css?family=Stoke:300|Roboto:400,300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css">	
 	
-	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
 
 </head>
 <body>
@@ -39,17 +39,17 @@
 <div class="categories l-sidebar standout">
 
 	<ul>
-		<li><a href="">All</a></li>
-		<li><a href="">Science Fiction</a></li>
-		<li><a href="">Romance</a></li>
-		<li><a href="">Horror</a></li>
-		<li><a href="">Sports</a></li>
+		<li><a href="#category/all">All</a></li>
+		<li><a href="#category/scifi">Science Fiction</a></li>
+		<li><a href="#category/romance">Romance</a></li>
+		<li><a href="#category/horror">Horror</a></li>
+		<li><a href="#category/sport">Sports</a></li>
 	</ul>
 </div>
 
 
-<div class="books-wrapper">
-	<div class="books l-content l-content-constrained">
+<div class="books-wrapper" data-id="books-wrapper">
+	<div class="books l-content l-content-constrained" data-id="books-list">
 		<ul>
 			<li class="thumb">				
 				<a class="thumb-link" href="#">
@@ -60,7 +60,7 @@
 		</ul>
 	</div>
 	
-	<div class="book l-content is-visible">
+	<div class="book" data-id="book">
 		<header class="book-header l-content l-content-constrained l-row">
 			<div class="l-column thumb-image"> 
 				<img src="http://books.google.com/books/content?id=9aBTSTQoEQQC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72WeYgnviyqIOSSC3D7GN2mxgGbZfDEUfgL5sKhCcN96Kibkmhz56Yza8M7b3Ndiz_sAU1GtprHOc3XvbHUJnejU3beEWbVw1E-51QnDWtDhzdR_Eo&source=gbs_api">
@@ -84,6 +84,14 @@
 		</div>
 	</div>
 </div>
+
+<script src="js/bootstrap.js"></script>
+<script src="js/routers/Router.js"></script>
+<script src="js/models/Books.js"></script>
+<script src="js/models/Book.js"></script>
+<script src="js/views/BooksList.js"></script>
+<script src="js/views/BookDetail.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
