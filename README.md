@@ -1,6 +1,6 @@
 # Foundations of Front-End Web Development with Davide Molins course https://www.udemy.com/share/101ryMAEMacF5XRHoJ/
 
-# Why I do this? 
+# Why do I do this? 
 
   I want to get back in Web development. 
   Towards full stack. 
@@ -26,3 +26,5 @@ With backbone.js I can test few onepage applications.
 
 Good practise to build onepage application imitating Google Play Books this time. 
 Tomorrow I get into making this page dynamic with backbone.js.
+
+Everything started good but I got troubles with json data, because all my browsers kept warning about CORS policy and the key functions couldn't be executed. All the code is correct and I keep moving on with this but need to figure out what is the most secure way to test...
